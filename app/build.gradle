@@ -4,6 +4,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\honor\\Documents\\key di progetto x\\angelokey.jks')
+            storePassword 'angelo'
+            keyAlias 'angelo'
+            keyPassword 'angelo'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
