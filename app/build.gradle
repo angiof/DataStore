@@ -11,6 +11,12 @@ android {
             keyAlias 'angelo'
             keyPassword 'angelo'
         }
+        release {
+            storeFile file('C:\\Users\\honor\\Documents\\key di progetto x\\angelokey.jks')
+            storePassword 'angelo'
+            keyAlias 'angelo'
+            keyPassword 'angelo'
+        }
     }
     compileSdk 32
 
@@ -26,9 +32,8 @@ android {
 
     buildTypes {
         release {
-            shrinkResources = true
             debuggable = false
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
