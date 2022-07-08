@@ -3,6 +3,7 @@ package com.example.persistence
 import android.content.Context
 
 class DataMangerParam {
+
     fun saveParam(c: Context, key: String?, value: Any?) {
         val preferences = c.getSharedPreferences("code", Context.MODE_PRIVATE)
         val editor = preferences.edit()
